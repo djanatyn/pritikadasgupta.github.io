@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Source Themes | ELLA KAYE</title>
-    <link>https://ellakaye.rbind.io/tags/source-themes/</link>
-      <atom:link href="https://ellakaye.rbind.io/tags/source-themes/index.xml" rel="self" type="application/rss+xml" />
+    <title>Source Themes | Pritika Dasgupta</title>
+    <link>https://pritikadasgupta.github.io/tags/source-themes/</link>
+      <atom:link href="https://pritikadasgupta.github.io/tags/source-themes/index.xml" rel="self" type="application/rss+xml" />
     <description>Source Themes</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-gb</language><copyright>© 2020 Ella Kaye</copyright><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-gb</language><copyright>© 2020 Pritika Dasgupta</copyright><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://ellakaye.rbind.io/images/logo.svg</url>
+      <url>https://pritikadasgupta.github.io/images/logo.svg</url>
       <title>Source Themes</title>
-      <link>https://ellakaye.rbind.io/tags/source-themes/</link>
+      <link>https://pritikadasgupta.github.io/tags/source-themes/</link>
     </image>
     
     <item>
       <title>An example preprint / working paper</title>
-      <link>https://ellakaye.rbind.io/publication/preprint/</link>
+      <link>https://pritikadasgupta.github.io/publication/preprint/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://ellakaye.rbind.io/publication/preprint/</guid>
+      <guid>https://pritikadasgupta.github.io/publication/preprint/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
@@ -29,9 +29,9 @@
     
     <item>
       <title>An example journal article</title>
-      <link>https://ellakaye.rbind.io/publication/journal-article/</link>
+      <link>https://pritikadasgupta.github.io/publication/journal-article/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>https://ellakaye.rbind.io/publication/journal-article/</guid>
+      <guid>https://pritikadasgupta.github.io/publication/journal-article/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -49,9 +49,9 @@
     
     <item>
       <title>An example conference paper</title>
-      <link>https://ellakaye.rbind.io/publication/conference-paper/</link>
+      <link>https://pritikadasgupta.github.io/publication/conference-paper/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://ellakaye.rbind.io/publication/conference-paper/</guid>
+      <guid>https://pritikadasgupta.github.io/publication/conference-paper/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
