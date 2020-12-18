@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ervin Sejdic | Pritika Dasgupta</title>
+    <link>https://pritikadasgupta.github.io/authors/ervin-sejdic/</link>
+      <atom:link href="https://pritikadasgupta.github.io/authors/ervin-sejdic/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ervin Sejdic</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-gb</language><copyright>© 2020 Pritika Dasgupta.</copyright><lastBuildDate>Tue, 01 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://pritikadasgupta.github.io/images/logo.svg</url>
+      <title>Ervin Sejdic</title>
+      <link>https://pritikadasgupta.github.io/authors/ervin-sejdic/</link>
+    </image>
+    
+    <item>
+      <title>Acceleration Gait Measures as Proxies for Motor Skill of Walking: A Narrative Review</title>
+      <link>https://pritikadasgupta.github.io/publication/dasgupta2020_reviewpaper/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://pritikadasgupta.github.io/publication/dasgupta2020_reviewpaper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Preliminary Study Using Smartphone Accelerometers to Sense Gait Impairments Due to Alcohol Intoxication</title>
+      <link>https://pritikadasgupta.github.io/publication/suffoletto2020_jsad/</link>
+      <pubDate>Sun, 12 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://pritikadasgupta.github.io/publication/suffoletto2020_jsad/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

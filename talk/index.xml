@@ -5,12 +5,20 @@
     <link>https://pritikadasgupta.github.io/talk/</link>
       <atom:link href="https://pritikadasgupta.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     <description>Talks</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-gb</language><copyright>© 2020 Pritika Dasgupta</copyright>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-gb</language><copyright>© 2020 Pritika Dasgupta.</copyright><lastBuildDate>Wed, 14 Oct 2020 18:00:00 +0000</lastBuildDate>
     <image>
       <url>https://pritikadasgupta.github.io/images/logo.svg</url>
       <title>Talks</title>
       <link>https://pritikadasgupta.github.io/talk/</link>
     </image>
+    
+    <item>
+      <title>DATA2VIZ: An Overview of Data Visualization in Research</title>
+      <link>https://pritikadasgupta.github.io/talk/2020-10-14-data2viz-part1/</link>
+      <pubDate>Wed, 14 Oct 2020 18:00:00 +0000</pubDate>
+      <guid>https://pritikadasgupta.github.io/talk/2020-10-14-data2viz-part1/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

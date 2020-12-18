@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ray Uymatiao | Pritika Dasgupta</title>
+    <link>https://pritikadasgupta.github.io/authors/ray-uymatiao/</link>
+      <atom:link href="https://pritikadasgupta.github.io/authors/ray-uymatiao/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ray Uymatiao</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-gb</language><copyright>© 2020 Pritika Dasgupta.</copyright><lastBuildDate>Sun, 12 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://pritikadasgupta.github.io/images/logo.svg</url>
+      <title>Ray Uymatiao</title>
+      <link>https://pritikadasgupta.github.io/authors/ray-uymatiao/</link>
+    </image>
+    
+    <item>
+      <title>A Preliminary Study Using Smartphone Accelerometers to Sense Gait Impairments Due to Alcohol Intoxication</title>
+      <link>https://pritikadasgupta.github.io/publication/suffoletto2020_jsad/</link>
+      <pubDate>Sun, 12 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://pritikadasgupta.github.io/publication/suffoletto2020_jsad/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

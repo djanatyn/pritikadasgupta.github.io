@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pritika Dasgupta</title>
+    <link>https://pritikadasgupta.github.io/authors/pritika-dasgupta/</link>
+      <atom:link href="https://pritikadasgupta.github.io/authors/pritika-dasgupta/index.xml" rel="self" type="application/rss+xml" />
+    <description>Pritika Dasgupta</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-gb</language><copyright>© 2020 Pritika Dasgupta.</copyright><lastBuildDate>Tue, 01 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://pritikadasgupta.github.io/images/logo.svg</url>
+      <title>Pritika Dasgupta</title>
+      <link>https://pritikadasgupta.github.io/authors/pritika-dasgupta/</link>
+    </image>
+    
+    <item>
+      <title>Acceleration Gait Measures as Proxies for Motor Skill of Walking: A Narrative Review</title>
+      <link>https://pritikadasgupta.github.io/publication/dasgupta2020_reviewpaper/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://pritikadasgupta.github.io/publication/dasgupta2020_reviewpaper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Preliminary Study Using Smartphone Accelerometers to Sense Gait Impairments Due to Alcohol Intoxication</title>
+      <link>https://pritikadasgupta.github.io/publication/suffoletto2020_jsad/</link>
+      <pubDate>Sun, 12 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://pritikadasgupta.github.io/publication/suffoletto2020_jsad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>You can tell by the way I use my walk. Predicting the presence of cognitive load with gait measurements</title>
+      <link>https://pritikadasgupta.github.io/publication/dasgupta2018/</link>
+      <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://pritikadasgupta.github.io/publication/dasgupta2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mediatized Populisms| Innuendo as Outreach:@ narendramodi and the Use of Political Irony on Twitter</title>
+      <link>https://pritikadasgupta.github.io/publication/pal2017/</link>
+      <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://pritikadasgupta.github.io/publication/pal2017/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
