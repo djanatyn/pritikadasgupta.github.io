@@ -1,111 +1,75 @@
-baseURL = "https://pritikadasgupta.github.io"
-languageCode = "en"
-DefaultContentLanguage = "en"
-title = "Website of Pritika Dasgupta"
-theme = "anatole"
-summarylength = 10
+# Configuration of Academic
+# Documentation: https://sourcethemes.com/academic/
+#
+# This file is formatted using TOML syntax - learn more at https://learnxinyminutes.com/docs/toml/
+# Each configuration section is defined by a name in square brackets (e.g. `[outputs]`).
+
+# Title of your site
+title = "Pritika Dasgupta"
+
+# The URL of your site.
+# End your URL with a `/` trailing slash, e.g. `https://example.com/`.
+baseurl = "https://pritikadasgupta.github.io/"
+
+# Enter a copyright notice to display in the site footer.
+# To display a copyright symbol, type `&copy;`. For current year, type `{year}`.
+copyright = "&copy; 2020 Pritika Dasgupta"
+
+############################
+## Advanced options below ##
+############################
+
+# Name of Academic theme folder in `themes/`.
+theme = "academic"
+
+# Get last modified date for content from Git?
+enableGitInfo = false
+
+# Default language to use (if you setup multilingual support)
+defaultContentLanguage = "en"
+hasCJKLanguage = false  # Set `true` for Chinese/Japanese/Korean languages.
+defaultContentLanguageInSubdir = false
+removePathAccents = true  # Workaround for https://github.com/gohugoio/hugo/issues/5687
+
+summaryLength = 30  # Listing summary length in words. Also, see `abstract_length` in `params.toml`.
+paginate = 10  # Number of items per page in paginated lists.
 enableEmoji = true
-enableRobotsTXT = true
-
-# Enable Disqus
-#disqusShortname = ""
-
-# Google Analytics
-#googleAnalytics = "UA-123-45"
-
-# Syntax highlighting
+footnotereturnlinkcontents = "<sup>^</sup>"
+ignoreFiles = ['\.Rmd$', '_files$', '_cache$', '\.knit\.md$', '\.utf8\.md$']
 pygmentsUseClasses = true
-pygmentsCodeFences = true
-pygmentsCodefencesGuessSyntax = true
 
-[params]
-title = "I'm Pritika Dasgupta"
-author = "Pritika Dasgupta"
-description = "Call me Pri! (she/her)"
-profilePicture = "images/avatar.png"
-keywords = "machine learning, data science, clinical informatics, gait, wearables, accelerometers, patient-generated data"
-favicon = "favicons/"
-# example ["css/custom.css"]
-customCss = []
-# example ["js/custom.js"]
-customJs = [] 
-mainSections = ["post"]
-images = ["images/site-feature-image.png"]
-doNotLoadAnimations = false
-# Form Spree Contact Form
-#contactFormAction = "https://formspree.io/f/your-form-hash-here"
-# Google Site Verify
-#googleSiteVerify = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+[outputs]
+  home = [ "HTML", "RSS", "JSON", "WebAppManifest" ]
+  section = [ "HTML", "RSS" ]
 
-## Math settings
-[params.math]
-enable = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
-use = "katex"  # options: "katex", "mathjax". default is "katex".
+[mediaTypes."application/manifest+json"]
+  suffixes = ["webmanifest"]
 
-## Social links
+[outputFormats.WebAppManifest]
+  mediaType = "application/manifest+json"
+  rel = "manifest"
 
-[[params.socialIcons]]
-icon = "fab fa-github"
-title = "GitHub"
-url = "/"
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Enable user to embed HTML snippets in Markdown content.
+  [markup.highlight]
+    codeFences = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
 
-[[params.socialIcons]]
-icon = "fab fa-instagram"
-title = "instagram"
-url = "https://www.instagram.com/pritikadasgupta"
+[imaging]
+  resampleFilter = "lanczos"
+  quality = 90
+  anchor = "smart"  # Anchor for cropping. Options include Smart and Center.
 
-[[params.socialIcons]]
-icon = "fab fa-twitter"
-title = "twitter"
-url = "https://www.twitter.com/pritikadasgupta"
+# Taxonomies.
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  publication_type = "publication_types"
+  author = "authors"
 
-[[params.socialIcons]]
-icon = "fas fa-envelope"
-title = "e-mail"
-url = "mailto:prd17@pitt.edu"
 
-## Menu items
-
-[menu]
-
-  [[menu.main]]
-  name = "Home"
-  identifier = "home"
-  weight = 1
-  url = "pritikadasgupta.github.io/"
-
-  [[menu.main]]
-  name = "Posts"
-  weight = 6
-  identifier = "posts"
-  url = "/post/"
-
-  [[menu.main]]
-  name = "About Me"
-  weight = 2
-  identifier = "about"
-  url = "/about/"
-
-  [[menu.main]]
-  name = "Publications"
-  weight = 3
-  identifier = "publications"
-  url = "/publications/"
-
-  [[menu.main]]
-  name = "Posters and Talks"
-  weight = 4
-  identifier = "poster and talks"
-  url = "/posters and talks/"
-
-  [[menu.main]]
-  name = "C.V."
-  weight = 5
-  identifier = "cv"
-  url = "/cv/"
-
-  [[menu.main]]
-  name = "Contact"
-  weight = 7
-  identifier = "contact"
-  url = "/contact/"

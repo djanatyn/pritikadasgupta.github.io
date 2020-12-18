@@ -1,19 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Website of Pritika Dasgupta</title>
-    <link>https://pritikadasgupta.github.io/tags/</link>
-    <description>Recent content in Tags on Website of Pritika Dasgupta</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://pritikadasgupta.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>index</title>
-      <link>https://pritikadasgupta.github.io/tags/index/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://pritikadasgupta.github.io/tags/index/</guid>
-      <description></description>
-    </item>
+    <title>Tags | ELLA KAYE</title>
+    <link>https://ellakaye.rbind.io/tags/</link>
+      <atom:link href="https://ellakaye.rbind.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tags</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-gb</language><copyright>© 2020 Ella Kaye</copyright><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ellakaye.rbind.io/images/logo.svg</url>
+      <title>Tags</title>
+      <link>https://ellakaye.rbind.io/tags/</link>
+    </image>
     
   </channel>
 </rss>
