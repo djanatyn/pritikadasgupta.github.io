@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ELLA KAYE</title>
+    <link>https://ellakaye.rbind.io/</link>
+      <atom:link href="https://ellakaye.rbind.io/index.xml" rel="self" type="application/rss+xml" />
+    <description>ELLA KAYE</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-gb</language><copyright>© 2020 Ella Kaye</copyright><lastBuildDate>Wed, 29 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ellakaye.rbind.io/images/logo.svg</url>
+      <title>ELLA KAYE</title>
+      <link>https://ellakaye.rbind.io/</link>
+    </image>
+    
+    <item>
+      <title>Example Page 1</title>
+      <link>https://ellakaye.rbind.io/courses/example/example1/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>https://ellakaye.rbind.io/courses/example/example1/</guid>
+      <description>&lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
+&lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+&lt;h2 id=&#34;tip-2&#34;&gt;Tip 2&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Example Page 2</title>
+      <link>https://ellakaye.rbind.io/courses/example/example2/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>https://ellakaye.rbind.io/courses/example/example2/</guid>
+      <description>&lt;p&gt;Here are some more tips for getting started with Academic:&lt;/p&gt;
+&lt;h2 id=&#34;tip-3&#34;&gt;Tip 3&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+&lt;h2 id=&#34;tip-4&#34;&gt;Tip 4&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>alerts</title>
+      <link>https://ellakaye.rbind.io/post/alerts/</link>
+      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://ellakaye.rbind.io/post/alerts/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    A note
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    A warning
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert-note&#34;&gt;
+&lt;p&gt;Another note&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert-warning&#34;&gt;
+&lt;p&gt;Another warning&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Need to use the standard syntax with curly brackets, not the ::: one.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    It doesn&amp;rsquo;t seem possible to use bullet list within an alert.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Testing custom fonts in plots</title>
+      <link>https://ellakaye.rbind.io/post/custom-fonts/</link>
+      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://ellakaye.rbind.io/post/custom-fonts/</guid>
+      <description>&lt;p&gt;Testing using custom fonts with &lt;code&gt;ragg&lt;/code&gt; and &lt;code&gt;systemfonts&lt;/code&gt; (although don&amp;rsquo;t seem to need to have either library loaded!)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;
+&lt;pre class=&#39;chroma&#39;&gt;&lt;code class=&#39;language-r&#39; data-lang=&#39;r&#39;&gt;&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://rdrr.io/r/base/library.html&#39;&gt;library&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;&lt;a href=&#39;http://ggplot2.tidyverse.org&#39;&gt;ggplot2&lt;/a&gt;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;using-a-font-saved-on-my-computer-as-ttf&#34;&gt;Using a font saved on my computer as .ttf&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;
+&lt;pre class=&#39;chroma&#39;&gt;&lt;code class=&#39;language-r&#39; data-lang=&#39;r&#39;&gt;&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/ggplot.html&#39;&gt;ggplot&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;diamonds&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/geom_bar.html&#39;&gt;geom_bar&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/aes.html&#39;&gt;aes&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;color&lt;/span&gt;, fill = &lt;span class=&#39;k&#39;&gt;color&lt;/span&gt;)) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/labs.html&#39;&gt;ggtitle&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;s&#39;&gt;&#34;A fancy font&#34;&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/theme.html&#39;&gt;theme&lt;/a&gt;&lt;/span&gt;(text = &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/element.html&#39;&gt;element_text&lt;/a&gt;&lt;/span&gt;(family = &lt;span class=&#39;s&#39;&gt;&#34;Neutraface Slab Display TT Bold&#34;&lt;/span&gt;, size = &lt;span class=&#39;m&#39;&gt;20&lt;/span&gt;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;figs/unnamed-chunk-2-1.png&#34; width=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;using-a-google-font-declared-in-emk_font_set2&#34;&gt;Using a Google Font declared in &lt;code&gt;emk_font_set2&lt;/code&gt;&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;
+&lt;pre class=&#39;chroma&#39;&gt;&lt;code class=&#39;language-r&#39; data-lang=&#39;r&#39;&gt;&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/ggplot.html&#39;&gt;ggplot&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;diamonds&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/geom_bar.html&#39;&gt;geom_bar&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/aes.html&#39;&gt;aes&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;color&lt;/span&gt;, fill = &lt;span class=&#39;k&#39;&gt;color&lt;/span&gt;)) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/labs.html&#39;&gt;ggtitle&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;s&#39;&gt;&#34;A fancy font&#34;&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/theme.html&#39;&gt;theme&lt;/a&gt;&lt;/span&gt;(text = &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/element.html&#39;&gt;element_text&lt;/a&gt;&lt;/span&gt;(family = &lt;span class=&#39;s&#39;&gt;&#34;Raleway&#34;&lt;/span&gt;, size = &lt;span class=&#39;m&#39;&gt;20&lt;/span&gt;))&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;using-a-google-font-saved-in-font-book&#34;&gt;Using a Google Font saved in Font Book&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;
+&lt;pre class=&#39;chroma&#39;&gt;&lt;code class=&#39;language-r&#39; data-lang=&#39;r&#39;&gt;&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/ggplot.html&#39;&gt;ggplot&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;diamonds&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/geom_bar.html&#39;&gt;geom_bar&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/aes.html&#39;&gt;aes&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;color&lt;/span&gt;, fill = &lt;span class=&#39;k&#39;&gt;color&lt;/span&gt;)) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/labs.html&#39;&gt;ggtitle&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;s&#39;&gt;&#34;A fancy font&#34;&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/theme.html&#39;&gt;theme&lt;/a&gt;&lt;/span&gt;(text = &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/element.html&#39;&gt;element_text&lt;/a&gt;&lt;/span&gt;(family = &lt;span class=&#39;s&#39;&gt;&#34;Mulish&#34;&lt;/span&gt;, size = &lt;span class=&#39;m&#39;&gt;20&lt;/span&gt;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;figs/unnamed-chunk-4-1.png&#34; width=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;using-a-google-font-with-showtext&#34;&gt;Using a Google Font with &lt;code&gt;showtext&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;using-a-ttf-font-with-cairo&#34;&gt;Using a .ttf font with &lt;code&gt;cairo&lt;/code&gt;&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;
+&lt;pre class=&#39;chroma&#39;&gt;&lt;code class=&#39;language-r&#39; data-lang=&#39;r&#39;&gt;&lt;span class=&#39;k&#39;&gt;p&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/ggplot.html&#39;&gt;ggplot&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;diamonds&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/geom_bar.html&#39;&gt;geom_bar&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/aes.html&#39;&gt;aes&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;color&lt;/span&gt;, fill = &lt;span class=&#39;k&#39;&gt;color&lt;/span&gt;)) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/labs.html&#39;&gt;ggtitle&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;s&#39;&gt;&#34;A fancy font&#34;&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/theme.html&#39;&gt;theme&lt;/a&gt;&lt;/span&gt;(text = &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/element.html&#39;&gt;element_text&lt;/a&gt;&lt;/span&gt;(family = &lt;span class=&#39;s&#39;&gt;&#34;Mulish&#34;&lt;/span&gt;, size = &lt;span class=&#39;m&#39;&gt;20&lt;/span&gt;))
+
+&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/ggsave.html&#39;&gt;ggsave&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;s&#39;&gt;&#34;Mulish-title.pdf&#34;&lt;/span&gt;, device = &lt;span class=&#39;k&#39;&gt;cairo_pdf&lt;/span&gt;)
+&lt;span class=&#39;c&#39;&gt;#&amp;gt; Saving 7 x 4.33 in image&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;using-a-oft-font-with-cairo&#34;&gt;Using a .oft font with &lt;code&gt;cairo&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;This also works&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;
+&lt;pre class=&#39;chroma&#39;&gt;&lt;code class=&#39;language-r&#39; data-lang=&#39;r&#39;&gt;&lt;span class=&#39;k&#39;&gt;p&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/ggplot.html&#39;&gt;ggplot&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;diamonds&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/geom_bar.html&#39;&gt;geom_bar&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/aes.html&#39;&gt;aes&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;color&lt;/span&gt;, fill = &lt;span class=&#39;k&#39;&gt;color&lt;/span&gt;)) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/labs.html&#39;&gt;ggtitle&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;s&#39;&gt;&#34;A fancy font&#34;&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/theme.html&#39;&gt;theme&lt;/a&gt;&lt;/span&gt;(text = &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/element.html&#39;&gt;element_text&lt;/a&gt;&lt;/span&gt;(family = &lt;span class=&#39;s&#39;&gt;&#34;Museo&#34;&lt;/span&gt;, size = &lt;span class=&#39;m&#39;&gt;20&lt;/span&gt;))
+
+&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/ggsave.html&#39;&gt;ggsave&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;s&#39;&gt;&#34;Museo-title.pdf&#34;&lt;/span&gt;, device = &lt;span class=&#39;k&#39;&gt;cairo_pdf&lt;/span&gt;)
+&lt;span class=&#39;c&#39;&gt;#&amp;gt; Saving 7 x 4.33 in image&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;using-a-otf-with-ragg&#34;&gt;Using a .otf with &lt;code&gt;ragg&lt;/code&gt;&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;
+&lt;pre class=&#39;chroma&#39;&gt;&lt;code class=&#39;language-r&#39; data-lang=&#39;r&#39;&gt;&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://rdrr.io/r/grDevices/quartz.html&#39;&gt;quartz&lt;/a&gt;&lt;/span&gt;()
+&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/ggplot.html&#39;&gt;ggplot&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;diamonds&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/geom_bar.html&#39;&gt;geom_bar&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/aes.html&#39;&gt;aes&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;color&lt;/span&gt;, fill = &lt;span class=&#39;k&#39;&gt;color&lt;/span&gt;)) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/labs.html&#39;&gt;ggtitle&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;s&#39;&gt;&#34;A fancy font&#34;&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/theme.html&#39;&gt;theme&lt;/a&gt;&lt;/span&gt;(text = &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/element.html&#39;&gt;element_text&lt;/a&gt;&lt;/span&gt;(family = &lt;span class=&#39;s&#39;&gt;&#34;Museo&#34;&lt;/span&gt;, size = &lt;span class=&#39;m&#39;&gt;20&lt;/span&gt;))&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Also works&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;
+&lt;pre class=&#39;chroma&#39;&gt;&lt;code class=&#39;language-r&#39; data-lang=&#39;r&#39;&gt;&lt;span class=&#39;k&#39;&gt;p&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/ggplot.html&#39;&gt;ggplot&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;diamonds&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/geom_bar.html&#39;&gt;geom_bar&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/aes.html&#39;&gt;aes&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;color&lt;/span&gt;, fill = &lt;span class=&#39;k&#39;&gt;color&lt;/span&gt;)) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/labs.html&#39;&gt;ggtitle&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;s&#39;&gt;&#34;A fancy font&#34;&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/theme.html&#39;&gt;theme&lt;/a&gt;&lt;/span&gt;(text = &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/element.html&#39;&gt;element_text&lt;/a&gt;&lt;/span&gt;(family = &lt;span class=&#39;s&#39;&gt;&#34;Museo&#34;&lt;/span&gt;, size = &lt;span class=&#39;m&#39;&gt;20&lt;/span&gt;))
+
+&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/ggsave.html&#39;&gt;ggsave&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;s&#39;&gt;&#34;Museo-title.png&#34;&lt;/span&gt;, type = &lt;span class=&#39;s&#39;&gt;&#34;cairo&#34;&lt;/span&gt;)
+&lt;span class=&#39;c&#39;&gt;#&amp;gt; Saving 7 x 4.33 in image&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;using-a-computer-otf-font-with-showtext&#34;&gt;Using a computer .otf font with &lt;code&gt;showtext&lt;/code&gt;&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;
+&lt;pre class=&#39;chroma&#39;&gt;&lt;code class=&#39;language-r&#39; data-lang=&#39;r&#39;&gt;&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://rdrr.io/r/base/library.html&#39;&gt;library&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;&lt;a href=&#39;https://github.com/yixuan/showtext&#39;&gt;showtext&lt;/a&gt;&lt;/span&gt;)
+&lt;span class=&#39;c&#39;&gt;#&amp;gt; Loading required package: sysfonts&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;#&amp;gt; Loading required package: showtextdb&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Does not work:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;
+&lt;pre class=&#39;chroma&#39;&gt;&lt;code class=&#39;language-r&#39; data-lang=&#39;r&#39;&gt;&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://rdrr.io/pkg/showtext/man/showtext_auto.html&#39;&gt;showtext_auto&lt;/a&gt;&lt;/span&gt;()
+
+&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/ggplot.html&#39;&gt;ggplot&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;diamonds&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/geom_bar.html&#39;&gt;geom_bar&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/aes.html&#39;&gt;aes&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;color&lt;/span&gt;, fill = &lt;span class=&#39;k&#39;&gt;color&lt;/span&gt;)) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/labs.html&#39;&gt;ggtitle&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;s&#39;&gt;&#34;A fancy font&#34;&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/theme.html&#39;&gt;theme&lt;/a&gt;&lt;/span&gt;(text = &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/element.html&#39;&gt;element_text&lt;/a&gt;&lt;/span&gt;(family = &lt;span class=&#39;s&#39;&gt;&#34;Museo&#34;&lt;/span&gt;, size = &lt;span class=&#39;m&#39;&gt;20&lt;/span&gt;))&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Not sure what counts as value for &lt;code&gt;regular&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;
+&lt;pre class=&#39;chroma&#39;&gt;&lt;code class=&#39;language-r&#39; data-lang=&#39;r&#39;&gt;&lt;span class=&#39;nf&#39;&gt;font_add&lt;/span&gt;(&lt;span class=&#39;s&#39;&gt;&#34;Museo&#34;&lt;/span&gt;, regular = &lt;span class=&#39;s&#39;&gt;&#34;Museo&#34;&lt;/span&gt;)
+&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://rdrr.io/pkg/showtext/man/showtext_auto.html&#39;&gt;showtext_auto&lt;/a&gt;&lt;/span&gt;()
+
+&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/ggplot.html&#39;&gt;ggplot&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;diamonds&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/geom_bar.html&#39;&gt;geom_bar&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/aes.html&#39;&gt;aes&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;color&lt;/span&gt;, fill = &lt;span class=&#39;k&#39;&gt;color&lt;/span&gt;)) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/labs.html&#39;&gt;ggtitle&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;s&#39;&gt;&#34;A fancy font&#34;&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/theme.html&#39;&gt;theme&lt;/a&gt;&lt;/span&gt;(text = &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/element.html&#39;&gt;element_text&lt;/a&gt;&lt;/span&gt;(family = &lt;span class=&#39;s&#39;&gt;&#34;Museo&#34;&lt;/span&gt;, size = &lt;span class=&#39;m&#39;&gt;20&lt;/span&gt;))&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;
+&lt;pre class=&#39;chroma&#39;&gt;&lt;code class=&#39;language-r&#39; data-lang=&#39;r&#39;&gt;&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://rdrr.io/r/base/library.html&#39;&gt;library&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;&lt;a href=&#39;https://dplyr.tidyverse.org&#39;&gt;dplyr&lt;/a&gt;&lt;/span&gt;)
+&lt;span class=&#39;c&#39;&gt;#&amp;gt; &lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;#&amp;gt; Attaching package: &#39;dplyr&#39;&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;#&amp;gt; The following objects are masked from &#39;package:stats&#39;:&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;#&amp;gt; &lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;#&amp;gt;     filter, lag&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;#&amp;gt; The following objects are masked from &#39;package:base&#39;:&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;#&amp;gt; &lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;#&amp;gt;     intersect, setdiff, setequal, union&lt;/span&gt;
+&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://rdrr.io/r/base/library.html&#39;&gt;library&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;&lt;a href=&#39;http://stringr.tidyverse.org&#39;&gt;stringr&lt;/a&gt;&lt;/span&gt;)
+&lt;span class=&#39;k&#39;&gt;systemfonts&lt;/span&gt;::&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://rdrr.io/pkg/systemfonts/man/system_fonts.html&#39;&gt;system_fonts&lt;/a&gt;&lt;/span&gt;() &lt;span class=&#39;o&#39;&gt;%&amp;gt;%&lt;/span&gt;
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://dplyr.tidyverse.org/reference/filter.html&#39;&gt;filter&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://stringr.tidyverse.org/reference/str_detect.html&#39;&gt;str_detect&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;path&lt;/span&gt;, &lt;span class=&#39;s&#39;&gt;&#34;Museo&#34;&lt;/span&gt;))
+&lt;span class=&#39;c&#39;&gt;#&amp;gt; &lt;span style=&#39;color: #555555;&#39;&gt;# A tibble: 3 x 9&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;#&amp;gt;   path                 index name    family  style weight width italic monospace&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;#&amp;gt;   &lt;span style=&#39;color: #555555;font-style: italic;&#39;&gt;&amp;lt;chr&amp;gt;&lt;/span&gt;&lt;span&gt;                &lt;/span&gt;&lt;span style=&#39;color: #555555;font-style: italic;&#39;&gt;&amp;lt;int&amp;gt;&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span style=&#39;color: #555555;font-style: italic;&#39;&gt;&amp;lt;chr&amp;gt;&lt;/span&gt;&lt;span&gt;   &lt;/span&gt;&lt;span style=&#39;color: #555555;font-style: italic;&#39;&gt;&amp;lt;chr&amp;gt;&lt;/span&gt;&lt;span&gt;   &lt;/span&gt;&lt;span style=&#39;color: #555555;font-style: italic;&#39;&gt;&amp;lt;chr&amp;gt;&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span style=&#39;color: #555555;font-style: italic;&#39;&gt;&amp;lt;ord&amp;gt;&lt;/span&gt;&lt;span&gt;  &lt;/span&gt;&lt;span style=&#39;color: #555555;font-style: italic;&#39;&gt;&amp;lt;ord&amp;gt;&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span style=&#39;color: #555555;font-style: italic;&#39;&gt;&amp;lt;lgl&amp;gt;&lt;/span&gt;&lt;span&gt;  &lt;/span&gt;&lt;span style=&#39;color: #555555;font-style: italic;&#39;&gt;&amp;lt;lgl&amp;gt;&lt;/span&gt;&lt;span&gt;    &lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;#&amp;gt; &lt;span style=&#39;color: #555555;&#39;&gt;1&lt;/span&gt;&lt;span&gt; /Users/ellakaye/Lib…     0 Museo-… Museo   500   normal norm… FALSE  FALSE    &lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;#&amp;gt; &lt;span style=&#39;color: #555555;&#39;&gt;2&lt;/span&gt;&lt;span&gt; /Users/ellakaye/Lib…     0 MuseoS… Museo … 500   normal norm… FALSE  FALSE    &lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;#&amp;gt; &lt;span style=&#39;color: #555555;&#39;&gt;3&lt;/span&gt;&lt;span&gt; /Users/ellakaye/Lib…     0 Museo-… Museo   300   light  norm… FALSE  FALSE&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;
+&lt;pre class=&#39;chroma&#39;&gt;&lt;code class=&#39;language-r&#39; data-lang=&#39;r&#39;&gt;&lt;span class=&#39;nf&#39;&gt;font_add&lt;/span&gt;(&lt;span class=&#39;s&#39;&gt;&#34;Museo&#34;&lt;/span&gt;, regular = &lt;span class=&#39;s&#39;&gt;&#34;/Users/ellakaye/Library/Fonts/exljbris - Museo-500&#34;&lt;/span&gt;)
+&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://rdrr.io/pkg/showtext/man/showtext_auto.html&#39;&gt;showtext_auto&lt;/a&gt;&lt;/span&gt;()
+
+&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/ggplot.html&#39;&gt;ggplot&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;diamonds&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/geom_bar.html&#39;&gt;geom_bar&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/aes.html&#39;&gt;aes&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;color&lt;/span&gt;, fill = &lt;span class=&#39;k&#39;&gt;color&lt;/span&gt;)) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/labs.html&#39;&gt;ggtitle&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;s&#39;&gt;&#34;A fancy font&#34;&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/theme.html&#39;&gt;theme&lt;/a&gt;&lt;/span&gt;(text = &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/element.html&#39;&gt;element_text&lt;/a&gt;&lt;/span&gt;(family = &lt;span class=&#39;s&#39;&gt;&#34;Museo&#34;&lt;/span&gt;, size = &lt;span class=&#39;m&#39;&gt;20&lt;/span&gt;))&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;
+&lt;pre class=&#39;chroma&#39;&gt;&lt;code class=&#39;language-r&#39; data-lang=&#39;r&#39;&gt;&lt;span class=&#39;nf&#39;&gt;font_add_google&lt;/span&gt;(&lt;span class=&#39;s&#39;&gt;&#34;Cinzel&#34;&lt;/span&gt;, &lt;span class=&#39;s&#39;&gt;&#34;Cinzel&#34;&lt;/span&gt;)
+&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://rdrr.io/pkg/showtext/man/showtext_auto.html&#39;&gt;showtext_auto&lt;/a&gt;&lt;/span&gt;()
+
+&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/ggplot.html&#39;&gt;ggplot&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;diamonds&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/geom_bar.html&#39;&gt;geom_bar&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/aes.html&#39;&gt;aes&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;color&lt;/span&gt;, fill = &lt;span class=&#39;k&#39;&gt;color&lt;/span&gt;)) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/labs.html&#39;&gt;ggtitle&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;s&#39;&gt;&#34;A fancy font&#34;&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; 
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/theme.html&#39;&gt;theme&lt;/a&gt;&lt;/span&gt;(text = &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/element.html&#39;&gt;element_text&lt;/a&gt;&lt;/span&gt;(family = &lt;span class=&#39;s&#39;&gt;&#34;Cinzel&#34;&lt;/span&gt;, size = &lt;span class=&#39;m&#39;&gt;20&lt;/span&gt;))&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;from-andrews-blog&#34;&gt;From Andrew&amp;rsquo;s blog&lt;/h3&gt;
+&lt;p&gt;Need to have font family installed on computer&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;
+&lt;pre class=&#39;chroma&#39;&gt;&lt;code class=&#39;language-r&#39; data-lang=&#39;r&#39;&gt;&lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/ggplot.html&#39;&gt;ggplot&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;k&#39;&gt;mpg&lt;/span&gt;, &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/aes.html&#39;&gt;aes&lt;/a&gt;&lt;/span&gt;(x = &lt;span class=&#39;k&#39;&gt;cyl&lt;/span&gt;, y = &lt;span class=&#39;k&#39;&gt;hwy&lt;/span&gt;)) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt;
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/geom_point.html&#39;&gt;geom_point&lt;/a&gt;&lt;/span&gt;() &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt;
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/geom_smooth.html&#39;&gt;geom_smooth&lt;/a&gt;&lt;/span&gt;(method = &lt;span class=&#39;s&#39;&gt;&#34;lm&#34;&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt;
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/annotate.html&#39;&gt;annotate&lt;/a&gt;&lt;/span&gt;(&lt;span class=&#39;s&#39;&gt;&#34;text&#34;&lt;/span&gt;, x = &lt;span class=&#39;m&#39;&gt;5&lt;/span&gt;, y = &lt;span class=&#39;m&#39;&gt;35&lt;/span&gt;, label = &lt;span class=&#39;s&#39;&gt;&#34;There aren&#39;t a lot of\n5 cylinder cars&#34;&lt;/span&gt;,
+           family = &lt;span class=&#39;s&#39;&gt;&#34;Source Sans Pro Semibold&#34;&lt;/span&gt;, color = &lt;span class=&#39;s&#39;&gt;&#34;#DC5B44&#34;&lt;/span&gt;, size = &lt;span class=&#39;m&#39;&gt;4&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt;
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/labs.html&#39;&gt;labs&lt;/a&gt;&lt;/span&gt;(title = &lt;span class=&#39;s&#39;&gt;&#34;Highway miles per gallon and cylinders&#34;&lt;/span&gt;,
+       subtitle = &lt;span class=&#39;s&#39;&gt;&#34;This is an interesting relationship, I guess&#34;&lt;/span&gt;,
+       caption = &lt;span class=&#39;s&#39;&gt;&#34;Source: ggplot&#39;s built-in data&#34;&lt;/span&gt;,
+       x = &lt;span class=&#39;s&#39;&gt;&#34;Cylinders&#34;&lt;/span&gt;, y = &lt;span class=&#39;s&#39;&gt;&#34;Highway miles per gallon&#34;&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt;
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/ggtheme.html&#39;&gt;theme_light&lt;/a&gt;&lt;/span&gt;(base_family = &lt;span class=&#39;s&#39;&gt;&#34;Source Sans Pro&#34;&lt;/span&gt;) &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt;
+  &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/theme.html&#39;&gt;theme&lt;/a&gt;&lt;/span&gt;(plot.caption = &lt;span class=&#39;nf&#39;&gt;&lt;a href=&#39;https://ggplot2.tidyverse.org/reference/element.html&#39;&gt;element_text&lt;/a&gt;&lt;/span&gt;(family = &lt;span class=&#39;s&#39;&gt;&#34;Source Sans Pro ExtraLight&#34;&lt;/span&gt;))&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Using theme fonts does NOT work.
+  &lt;/div&gt;
+&lt;/div&gt;
+ &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Also, using a .otf font in Font Book doesn&amp;rsquo;t work.
+  &lt;/div&gt;
+&lt;/div&gt;
+ &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Also, using adding &lt;code&gt;face = &amp;quot;italic&amp;quot;&lt;/code&gt; to &lt;code&gt;element_text&lt;/code&gt; doesn&amp;rsquo;t work if italic option not specified in font set.
+  &lt;/div&gt;
+&lt;/div&gt;
+ &lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    After adding a font to Font Book, might need to restart computer before it works in plots
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An example preprint / working paper</title>
+      <link>https://ellakaye.rbind.io/publication/preprint/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>https://ellakaye.rbind.io/publication/preprint/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Supplementary notes can be added here, including 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>https://ellakaye.rbind.io/slides/example/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://ellakaye.rbind.io/slides/example/</guid>
+      <description>&lt;h1 id=&#34;create-slides-in-markdown-with-academic&#34;&gt;Create slides in Markdown with Academic&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic&lt;/a&gt; | 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
+&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
+&lt;li&gt;Supports speaker notes&lt;/li&gt;
+&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
+&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Code block:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;porridge&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;blueberry&amp;#34;&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;porridge&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;blueberry&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;k&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Eating...&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
+&lt;p&gt;Block math:&lt;/p&gt;
+&lt;p&gt;$$
+f\left( x \right) = ;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
+&lt;p&gt;Make content appear incrementally&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} **Two** {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+One
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+&lt;strong&gt;Two&lt;/strong&gt;
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+Three
+&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
+&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;{{% speaker_note %}}
+&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; Only the speaker can read these notes
+&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; Press &lt;span class=&#34;sb&#34;&gt;`S`&lt;/span&gt; key to view
+{{% /speaker_note %}}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/aside&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
+&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
+&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
+&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
+&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
+&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/img/boards.jpg&#34;
+  &gt;
+
+&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
+&lt;p&gt;Customize the slide style and background&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;background-image&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/img/boards.jpg&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
+{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;background-color&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;#0000FF&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
+{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;my-style&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
+&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;reveal&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;h1&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;reveal&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;h2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;reveal&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;h3&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;k&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;navy&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://spectrum.chat/academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://ellakaye.rbind.io/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>https://ellakaye.rbind.io/privacy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Terms</title>
+      <link>https://ellakaye.rbind.io/terms/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>https://ellakaye.rbind.io/terms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An example journal article</title>
+      <link>https://ellakaye.rbind.io/publication/journal-article/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>https://ellakaye.rbind.io/publication/journal-article/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Supplementary notes can be added here, including 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An example conference paper</title>
+      <link>https://ellakaye.rbind.io/publication/conference-paper/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>https://ellakaye.rbind.io/publication/conference-paper/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Supplementary notes can be added here, including 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
