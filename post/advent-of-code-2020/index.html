@@ -782,39 +782,39 @@
 <td style="text-align:center">**</td>
 </tr>
 <tr>
-<td><a href="#day19"></td>
-<td style="text-align:center">Day 19: 
+<td><a href="#day19">Day 19: 
 <a href="https://adventofcode.com/2020/day/19" target="_blank" rel="noopener">Day 19: Monster Messages</a></td>
+<td style="text-align:center">**</td>
 </tr>
 <tr>
-<td><a href="#day20"></td>
-<td style="text-align:center">Day 20: 
+<td><a href="#day20"> Day 20: 
 <a href="https://adventofcode.com/2020/day/20" target="_blank" rel="noopener">Day 20: Jurassic Jigsaw</a></td>
+<td style="text-align:center">**</td>
 </tr>
 <tr>
-<td><a href="#day21"></td>
-<td style="text-align:center">Day 21: 
+<td><a href="#day21"> Day 21: 
 <a href="https://adventofcode.com/2020/day/21" target="_blank" rel="noopener">Day 21: Allergen Assessment</a></td>
+<td style="text-align:center">**</td>
 </tr>
 <tr>
-<td><a href="#day22"></td>
-<td style="text-align:center">Day 22: 
+<td><a href="#day22"> Day 22: 
 <a href="https://adventofcode.com/2020/day/22" target="_blank" rel="noopener">Day 22: Crab Combat</a></td>
+<td style="text-align:center">**</td>
 </tr>
 <tr>
-<td><a href="#day23"></td>
-<td style="text-align:center">Day 23: 
+<td><a href="#day23"> Day 23: 
 <a href="https://adventofcode.com/2020/day/23" target="_blank" rel="noopener">Day 23: Crab Cupst</a></td>
+<td style="text-align:center">**</td>
 </tr>
 <tr>
-<td><a href="#day24"></td>
-<td style="text-align:center">Day 24: 
+<td><a href="#day24"> Day 24: 
 <a href="https://adventofcode.com/2020/day/24" target="_blank" rel="noopener">Day 24: Lobby Layout</a></td>
+<td style="text-align:center">**</td>
 </tr>
 <tr>
-<td><a href="#day25"></td>
-<td style="text-align:center">Day 25: 
+<td><a href="#day25"> Day 25: 
 <a href="https://adventofcode.com/2020/day/25" target="_blank" rel="noopener">Day 25: Combo Breaker</a></td>
+<td style="text-align:center">**</td>
 </tr>
 </tbody>
 </table>
@@ -824,7 +824,7 @@
 <h2 id="day-1-report-repairhttpsadventofcodecom2020day1">Day 1: 
 <a href="https://adventofcode.com/2020/day/1" target="_blank" rel="noopener">Report Repair</a></h2>
 <p>
-<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/exercise1.input.txt" target="_blank" rel="noopener">My day 1 data</a></p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day1/exercise1.input.txt" target="_blank" rel="noopener">My day 1 data</a></p>
 <h4 id="part-1-two-numbers">Part 1: Two numbers</h4>
 <p>The challenge is to find two numbers from a list that sum to 2020, then to report their product.</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ch">#!/bin/python3</span>
@@ -842,7 +842,7 @@
 <span class="n">fptr</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;OUTPUT_PATH&#39;</span><span class="p">],</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;INPUT_PATH&#39;</span><span class="p">])</span> <span class="k">as</span> <span class="n">ar_count</span><span class="p">:</span>
     <span class="n">ar</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">ar_count</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span>
-<span class="n">k</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;What do you want your sum to be? &#34;</span><span class="p">))</span> <span class="c1">#What do you want your sum to be?</span>
+<span class="n">k</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;What do you want your sum to be? &#34;</span><span class="p">))</span> 
 <span class="n">result</span> <span class="o">=</span> <span class="n">aParticularSum</span><span class="p">(</span><span class="n">ar</span><span class="p">,</span><span class="n">k</span><span class="p">)</span>
 <span class="k">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 <span class="n">fptr</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
@@ -863,12 +863,20 @@
 <span class="n">fptr</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;OUTPUT_PATH&#39;</span><span class="p">],</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;INPUT_PATH&#39;</span><span class="p">])</span> <span class="k">as</span> <span class="n">ar_count</span><span class="p">:</span>
     <span class="n">ar</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">ar_count</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span>
-<span class="n">k</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;What do you want your sum to be? &#34;</span><span class="p">))</span> <span class="c1">#What do you want your sum to be?</span>
+<span class="n">k</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;What do you want your sum to be? &#34;</span><span class="p">))</span> 
 <span class="n">result</span> <span class="o">=</span> <span class="n">aParticularSum</span><span class="p">(</span><span class="n">ar</span><span class="p">,</span><span class="n">k</span><span class="p">)</span>
 <span class="k">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 <span class="n">fptr</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
 <span class="n">fptr</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</code></pre></div><hr>
+</code></pre></div><p>
+<a id='day2'></a>
+</p>
+<h2 id="day-2-password-philosophyhttpsadventofcodecom2020day2">Day 2: 
+<a href="https://adventofcode.com/2020/day/2" target="_blank" rel="noopener">Password Philosophy</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day2/input" target="_blank" rel="noopener">My day 2 data</a></p>
+<h4 id="part-1">Part 1:</h4>
+<hr>
 <p>This post will be updated as I code/work through the rest of the challenges.</p>
 
     </div>
