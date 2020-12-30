@@ -110,40 +110,6 @@ sum(df3$valid) #part 2 solution
     </item>
     
     <item>
-      <title>Advent of Code 2020</title>
-      <link>https://pritikadasgupta.github.io/post/advent-of-code-2020-day4/</link>
-      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://pritikadasgupta.github.io/post/advent-of-code-2020-day4/</guid>
-      <description>&lt;p&gt;Today&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Challenge&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;Status&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;#day4&#34;&gt;Day 4: Passport Processing&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;**&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;
-&lt;a id=&#39;day4&#39;&gt;&lt;/a&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;day-4-passport-processinghttpsadventofcodecom2020day4&#34;&gt;Day 4: 
-&lt;a href=&#34;https://adventofcode.com/2020/day/4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Passport Processing&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day4/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 4 data&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day4/exercise4.testinput.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 4 test data&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;part-1&#34;&gt;Part 1:&lt;/h2&gt;
-&lt;hr&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Advent of Code 2020 Day 10</title>
       <link>https://pritikadasgupta.github.io/post/advent-of-code-2020-day10/</link>
       <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
@@ -320,6 +286,40 @@ sum(df3$valid) #part 2 solution
     </item>
     
     <item>
+      <title>Advent of Code 2020 Day 4</title>
+      <link>https://pritikadasgupta.github.io/post/advent-of-code-2020-day4/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://pritikadasgupta.github.io/post/advent-of-code-2020-day4/</guid>
+      <description>&lt;p&gt;Today&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Challenge&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Status&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;#day4&#34;&gt;Day 4: Passport Processing&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;**&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+&lt;a id=&#39;day4&#39;&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;day-4-passport-processinghttpsadventofcodecom2020day4&#34;&gt;Day 4: 
+&lt;a href=&#34;https://adventofcode.com/2020/day/4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Passport Processing&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day4/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 4 data&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day4/exercise4.testinput.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 4 test data&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;part-1&#34;&gt;Part 1:&lt;/h2&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Advent of Code 2020 Day 5</title>
       <link>https://pritikadasgupta.github.io/post/advent-of-code-2020-day5/</link>
       <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
@@ -396,6 +396,14 @@ sum(df3$valid) #part 2 solution
       <description>&lt;p&gt;I would like to participate in 
 &lt;a href=&#34;https://github.com/rfordatascience/tidytuesday&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#TidyTuesday&lt;/a&gt; more, and I&amp;rsquo;m hoping that publishing my work on my website (and on twitter) will help me do just that.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Acceleration Signals in Determining Gait-Related Difficulties and the Motor Skill of Walking in Older Adults</title>
+      <link>https://pritikadasgupta.github.io/talk/2020-06-22-nlm/</link>
+      <pubDate>Wed, 24 Jun 2020 08:00:00 +0000</pubDate>
+      <guid>https://pritikadasgupta.github.io/talk/2020-06-22-nlm/</guid>
+      <description></description>
     </item>
     
   </channel>

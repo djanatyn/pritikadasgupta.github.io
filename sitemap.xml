@@ -78,11 +78,6 @@
   </url>
   
   <url>
-    <loc>https://pritikadasgupta.github.io/post/advent-of-code-2020-day4/</loc>
-    <lastmod>2020-12-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://pritikadasgupta.github.io/post/advent-of-code-2020-day1/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
   </url>
@@ -170,6 +165,11 @@
   <url>
     <loc>https://pritikadasgupta.github.io/post/advent-of-code-2020-day3/</loc>
     <lastmod>2020-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pritikadasgupta.github.io/post/advent-of-code-2020-day4/</loc>
+    <lastmod>2020-12-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -305,6 +305,11 @@
   <url>
     <loc>https://pritikadasgupta.github.io/authors/ray-uymatiao/</loc>
     <lastmod>2020-07-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pritikadasgupta.github.io/talk/2020-06-22-nlm/</loc>
+    <lastmod>2020-06-24T08:00:00+00:00</lastmod>
   </url>
   
   <url>
