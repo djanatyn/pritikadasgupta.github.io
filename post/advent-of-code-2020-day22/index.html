@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Pritika Dasgupta">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Working through [Advent of Code](https://adventofcode.com) 2020!">
+
+  
+  <link rel="alternate" hreflang="en-gb" href="https://pritikadasgupta.github.io/post/advent-of-code-2020-day22/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#D40067">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Code%7CPoppins%7CLibre+Caslon+Text%7CSource+Sans+Pro%7CJosefin+Slab:300,400,600,700%7CRaleway:300,400,500,600&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-101621242-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-101621242-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu72eaadfaae83107fec5afff8e893fb80_165100_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu72eaadfaae83107fec5afff8e893fb80_165100_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://pritikadasgupta.github.io/post/advent-of-code-2020-day22/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@pritikadasgupta">
+  <meta property="twitter:creator" content="@pritikadasgupta">
+  
+  <meta property="og:site_name" content="Pritika Dasgupta">
+  <meta property="og:url" content="https://pritikadasgupta.github.io/post/advent-of-code-2020-day22/">
+  <meta property="og:title" content="Advent of Code 2020 | Pritika Dasgupta">
+  <meta property="og:description" content="Working through [Advent of Code](https://adventofcode.com) 2020!"><meta property="og:image" content="https://pritikadasgupta.github.io/images/logo.svg">
+  <meta property="twitter:image" content="https://pritikadasgupta.github.io/images/logo.svg"><meta property="og:locale" content="en-gb">
+  
+    
+      <meta property="article:published_time" content="2020-12-01T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-12-29T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://pritikadasgupta.github.io/post/advent-of-code-2020-day22/"
+  },
+  "headline": "Advent of Code 2020",
+  
+  "datePublished": "2020-12-01T00:00:00Z",
+  "dateModified": "2020-12-29T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Pritika Dasgupta"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pritika Dasgupta",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://pritikadasgupta.github.io/images/logo.svg"
+    }
+  },
+  "description": "Working through [Advent of Code](https://adventofcode.com) 2020!"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  <link rel='stylesheet' href='/css/highlight-light.css' title='hl-light'>
+<link rel='stylesheet' href='/css/highlight-dark.css' title='hl-dark' disabled>
+
+
+
+  <title>Advent of Code 2020 | Pritika Dasgupta</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/images/logo.svg" alt="Pritika Dasgupta"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/images/logo.svg" alt="Pritika Dasgupta"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/talk/"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/post/"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/publication/"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/project/"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/contact/"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Advent of Code 2020</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Dec 29, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    5 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/r/">R</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>
+<a href="https://adventofcode.com" target="_blank" rel="noopener">Advent of Code</a> is an advent-style coding challenge, where there is a two-part coding/data challenge posted for each day in December until Christmas Day (December 1st to December 25th).</p>
+<p>I will be attempting each day using R (mostly), Python (sometimes), and MATLAB (rarely) &ndash; which are my three mainstay languages for data science.</p>
+<p>
+<a href="https://github.com/pritikadasgupta/adventofcode" target="_blank" rel="noopener">My github repository</a> contains my solutions to Advent of Code 2019-2020!</p>
+<p>I&rsquo;ve been blogging about each challenge and my approaches to each of these; feel free to scroll over and go to each challenge directly on this page:</p>
+<table>
+<thead>
+<tr>
+<th>Challenge</th>
+<th style="text-align:center">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#day1">Day 1: Report Repair</td>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td><a href="#day2">Day 2: Password Philosophy</td>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td><a href="#day3">Day 3: Toboggan Trajectory</td>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td><a href="#day4">Day 4: Passport Processing</td>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td><a href="#day5">Day 5: Binary Boarding</td>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td><a href="#day6">Day 6: Custom Customs</td>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td><a href="#day7">Day 7: Handy Haversacks</td>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td><a href="#day8">Day 8: Handheld Halting</td>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td><a href="#day9">Day 9: Encoding Error</td>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td><a href="#day10">Day 10: Adapter Array</td>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td><a href="#day11">Day 11: Seating System</td>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td><a href="#day12">Day 12: Rain Risk</td>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td><a href="#day13">Day 13: Shuttle Search</td>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td><a href="#day14">Day 14: Docking Data</td>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td><a href="#day15">Day 15: Rambunctious Recitation</td>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td><a href="#day16">Day 16: Ticket Translation</td>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td><a href="#day17">Day 17: Conway Cubes</td>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td><a href="#day18">Day 18: Operation Order</td>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td><a href="#day19">Day 19: Monster Messages</td>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td><a href="#day20"> Day 20: Jurassic Jigsaw</td>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td><a href="#day21"> Day 21: Allergen Assessment</td>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td><a href="#day22"> Day 22: Crab Combat</td>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td><a href="#day23"> Day 23: Crab Cups</td>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td><a href="#day24"> Day 24: Lobby Layout</td>
+<td style="text-align:center">**</td>
+</tr>
+<tr>
+<td><a href="#day25"> Day 25: Combo Breaker</td>
+<td style="text-align:center">**</td>
+</tr>
+</tbody>
+</table>
+<p>
+<a id='day1'></a>
+</p>
+<h2 id="day-1-report-repairhttpsadventofcodecom2020day1">Day 1: 
+<a href="https://adventofcode.com/2020/day/1" target="_blank" rel="noopener">Report Repair</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day1/exercise1.input.txt" target="_blank" rel="noopener">My day 1 data</a></p>
+<h2 id="part-1-two-numbers">Part 1: Two numbers</h2>
+<p>The challenge was to find two numbers from a list that sum to 2020, then to report their product.</p>
+<p>At first, I wanted to solve this problem any which way, and I didn&rsquo;t really care for time complexity. So my first solution was (incomplete code snippet):</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">aParticularSum</span><span class="p">(</span><span class="n">ar</span><span class="p">,</span><span class="n">k</span><span class="p">):</span>
+	<span class="n">multiple</span> <span class="o">=</span> <span class="mi">0</span>
+	<span class="k">for</span> <span class="n">x</span><span class="p">,</span><span class="n">xval</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">ar</span><span class="p">,</span><span class="n">start</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+		<span class="n">ar_y</span> <span class="o">=</span> <span class="n">ar</span><span class="p">[:</span><span class="n">x</span><span class="p">]</span> <span class="o">+</span> <span class="n">ar</span><span class="p">[</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">:]</span>
+		<span class="k">for</span> <span class="n">y</span><span class="p">,</span><span class="n">yval</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">ar_y</span><span class="p">,</span><span class="n">start</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+			<span class="k">if</span><span class="p">(</span><span class="n">xval</span><span class="o">+</span><span class="n">yval</span> <span class="o">==</span> <span class="n">k</span><span class="p">):</span>
+				<span class="n">multiple</span> <span class="o">=</span> <span class="n">xval</span><span class="o">*</span><span class="n">yval</span>
+	<span class="k">return</span> <span class="n">multiple</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;INPUT_PATH&#39;</span><span class="p">])</span> <span class="k">as</span> <span class="n">ar_count</span><span class="p">:</span> 
+	<span class="n">ar</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">ar_count</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mi">2020</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">aParticularSum</span><span class="p">(</span><span class="n">ar</span><span class="p">,</span><span class="n">k</span><span class="p">)</span>
+</code></pre></div><p>The above solution was of time complexity: O(n^2), which was not ideal.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">aParticularSum</span><span class="p">(</span><span class="n">ar</span><span class="p">,</span><span class="n">k</span><span class="p">):</span>
+    <span class="n">multiple</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">ar</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">ar</span><span class="p">)</span> <span class="c1"># sort the list ar</span>
+    <span class="n">minidx</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># min index</span>
+    <span class="n">maxidx</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">ar</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="c1">#max index</span>
+    <span class="k">while</span><span class="p">(</span><span class="n">minidx</span> <span class="o">&lt;</span> <span class="n">maxidx</span><span class="p">):</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">ar</span><span class="p">[</span><span class="n">minidx</span><span class="p">]</span> <span class="o">+</span> <span class="n">ar</span><span class="p">[</span><span class="n">maxidx</span><span class="p">]</span> <span class="o">==</span> <span class="n">k</span><span class="p">):</span>
+            <span class="n">multiple</span> <span class="o">=</span> <span class="n">ar</span><span class="p">[</span><span class="n">minidx</span><span class="p">]</span> <span class="o">*</span> <span class="n">ar</span><span class="p">[</span><span class="n">maxidx</span><span class="p">]</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">ar</span><span class="p">[</span><span class="n">minidx</span><span class="p">]</span> <span class="o">+</span> <span class="n">ar</span><span class="p">[</span><span class="n">maxidx</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">k</span><span class="p">):</span>
+            <span class="n">minidx</span> <span class="o">+=</span><span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">maxidx</span> <span class="o">-=</span><span class="mi">1</span>
+    <span class="k">return</span> <span class="n">multiple</span>
+</code></pre></div><p>This one (above) was of O(nlogn) time complexity with a space complexity of O(1).</p>
+<p>So how do I come up with a solution that&rsquo;s both efficient in terms of time and space complexity? Two words&hellip;</p>
+<h3 id="list-comprehensions">List Comprehensions</h3>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">aParticularSum</span><span class="p">(</span><span class="n">ar</span><span class="p">,</span><span class="n">k</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">({</span><span class="n">x</span><span class="o">*</span><span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">ar</span> <span class="k">if</span> <span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="n">x</span><span class="p">)</span> <span class="ow">in</span> <span class="n">ar</span><span class="p">})</span>
+</code></pre></div><p>Thus, my complete code (and by complete, I mean &ldquo;composable,&rdquo; like my partner says&hellip;. so it can be executed by anyone via the Terminal given you&rsquo;ve set the input and output paths):</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ch">#!/bin/python3</span>
+
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="k">def</span> <span class="nf">aParticularSum</span><span class="p">(</span><span class="n">ar</span><span class="p">,</span><span class="n">k</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">({</span><span class="n">x</span><span class="o">*</span><span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">ar</span> <span class="k">if</span> <span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="n">x</span><span class="p">)</span> <span class="ow">in</span> <span class="n">ar</span><span class="p">})</span>
+
+
+<span class="n">fptr</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;OUTPUT_PATH&#39;</span><span class="p">],</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;INPUT_PATH&#39;</span><span class="p">])</span> <span class="k">as</span> <span class="n">ar_count</span><span class="p">:</span>
+    <span class="n">ar</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">ar_count</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span>
+<span class="n">k</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;What do you want your sum to be? &#34;</span><span class="p">))</span> 
+<span class="n">result</span> <span class="o">=</span> <span class="n">aParticularSum</span><span class="p">(</span><span class="n">ar</span><span class="p">,</span><span class="n">k</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="n">fptr</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">fptr</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre></div><h2 id="part-2-three-numbers">Part 2: Three numbers</h2>
+<p>The challenge was to find THREE numbers from a list that sum to 2020, then to report their product. We can take our previous solution and tweak it a little to add another variable.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ch">#!/bin/python3</span>
+
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="k">def</span> <span class="nf">aParticularSum</span><span class="p">(</span><span class="n">ar</span><span class="p">,</span><span class="n">k</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">({(</span><span class="n">x</span><span class="o">*</span><span class="n">y</span><span class="o">*</span><span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="n">x</span><span class="o">-</span><span class="n">y</span><span class="p">))</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">ar</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">ar</span> <span class="k">if</span> <span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="n">x</span><span class="o">-</span><span class="n">y</span><span class="p">)</span> <span class="ow">in</span> <span class="n">ar</span><span class="p">})</span>
+
+<span class="n">fptr</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;OUTPUT_PATH&#39;</span><span class="p">],</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;INPUT_PATH&#39;</span><span class="p">])</span> <span class="k">as</span> <span class="n">ar_count</span><span class="p">:</span>
+    <span class="n">ar</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">ar_count</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span>
+<span class="n">k</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;What do you want your sum to be? &#34;</span><span class="p">))</span> 
+<span class="n">result</span> <span class="o">=</span> <span class="n">aParticularSum</span><span class="p">(</span><span class="n">ar</span><span class="p">,</span><span class="n">k</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="n">fptr</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">fptr</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre></div><p>
+<a id='day2'></a>
+</p>
+<h2 id="day-2-password-philosophyhttpsadventofcodecom2020day2">Day 2: 
+<a href="https://adventofcode.com/2020/day/2" target="_blank" rel="noopener">Password Philosophy</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day2/input" target="_blank" rel="noopener">My day 2 data</a></p>
+<h2 id="part-1">Part 1:</h2>
+<p>
+<a id='day3'></a>
+</p>
+<h2 id="day-3-toboggan-trajectoryhttpsadventofcodecom2020day3">Day 3: 
+<a href="https://adventofcode.com/2020/day/3" target="_blank" rel="noopener">Toboggan Trajectory</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day3/input" target="_blank" rel="noopener">My day 3 data</a></p>
+<h2 id="part-1-1">Part 1:</h2>
+<p>
+<a id='day4'></a>
+</p>
+<h2 id="day-4-passport-processinghttpsadventofcodecom2020day4">Day 4: 
+<a href="https://adventofcode.com/2020/day/4" target="_blank" rel="noopener">Passport Processing</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day4/input" target="_blank" rel="noopener">My day 4 data</a></p>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day4/exercise4.testinput.txt" target="_blank" rel="noopener">My day 4 test data</a></p>
+<h2 id="part-1-2">Part 1:</h2>
+<p>
+<a id='day5'></a>
+</p>
+<h2 id="day-5-binary-boardinghttpsadventofcodecom2020day5">Day 5: 
+<a href="https://adventofcode.com/2020/day/5" target="_blank" rel="noopener">Binary Boarding</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day5/input" target="_blank" rel="noopener">My day 5 data</a></p>
+<h2 id="part-1-3">Part 1:</h2>
+<p>
+<a id='day6'></a>
+</p>
+<h2 id="day-6-custom-customshttpsadventofcodecom2020day6">Day 6: 
+<a href="https://adventofcode.com/2020/day/6" target="_blank" rel="noopener">Custom Customs</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day6/input" target="_blank" rel="noopener">My day 6 data</a></p>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day6/exercise6.testinput.txt" target="_blank" rel="noopener">My day 6 test data</a></p>
+<h2 id="part-1-4">Part 1:</h2>
+<p>
+<a id='day7'></a>
+</p>
+<h2 id="day-7-handy-haversackshttpsadventofcodecom2020day7">Day 7: 
+<a href="https://adventofcode.com/2020/day/7" target="_blank" rel="noopener">Handy Haversacks</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day7/input" target="_blank" rel="noopener">My day 7 data</a></p>
+<h2 id="part-1-5">Part 1:</h2>
+<p>
+<a id='day8'></a>
+</p>
+<h2 id="day-8-handheld-haltinghttpsadventofcodecom2020day8">Day 8: 
+<a href="https://adventofcode.com/2020/day/8" target="_blank" rel="noopener">Handheld Halting</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day8/input" target="_blank" rel="noopener">My day 8 data</a></p>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day8/exercise8.testinput.txt" target="_blank" rel="noopener">My day 8 test data</a></p>
+<h2 id="part-1-6">Part 1:</h2>
+<p>
+<a id='day9'></a>
+</p>
+<h2 id="day-9-encoding-errorhttpsadventofcodecom2020day9">Day 9: 
+<a href="https://adventofcode.com/2020/day/9" target="_blank" rel="noopener">Encoding Error</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day9/input" target="_blank" rel="noopener">My day 9 data</a></p>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day9/exercise9.testinput.txt" target="_blank" rel="noopener">My day 9 test data</a></p>
+<h2 id="part-1-7">Part 1:</h2>
+<p>
+<a id='day10'></a>
+</p>
+<h2 id="day-10-adapter-arrayhttpsadventofcodecom2020day10">Day 10: 
+<a href="https://adventofcode.com/2020/day/10" target="_blank" rel="noopener">Adapter Array</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day10/input" target="_blank" rel="noopener">My day 10 data</a></p>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day10/exercise10.testinput.txt" target="_blank" rel="noopener">My day 10 test data</a></p>
+<h2 id="part-1-8">Part 1:</h2>
+<p>
+<a id='day11'></a>
+</p>
+<h2 id="day-11-seating-systemhttpsadventofcodecom2020day11">Day 11: 
+<a href="https://adventofcode.com/2020/day/11" target="_blank" rel="noopener">Seating System</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day11/input" target="_blank" rel="noopener">My day 11 data</a></p>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day11/exercise11.testinput.txt" target="_blank" rel="noopener">My day 11 test data</a></p>
+<h2 id="part-1-9">Part 1:</h2>
+<p>
+<a id='day12'></a>
+</p>
+<h2 id="day-12-rain-riskhttpsadventofcodecom2020day12">Day 12: 
+<a href="https://adventofcode.com/2020/day/12" target="_blank" rel="noopener">Rain Risk</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day12/input" target="_blank" rel="noopener">My day 12 data</a></p>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day12/exercise12.testinput.txt" target="_blank" rel="noopener">My day 12 test data</a></p>
+<h2 id="part-1-10">Part 1:</h2>
+<p>
+<a id='day13'></a>
+</p>
+<h2 id="day-13-shuttle-searchhttpsadventofcodecom2020day13">Day 13: 
+<a href="https://adventofcode.com/2020/day/13" target="_blank" rel="noopener">Shuttle Search</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day13/input" target="_blank" rel="noopener">My day 13 data</a></p>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day13/exercise13.testinput.txt" target="_blank" rel="noopener">My day 13 test data</a></p>
+<h2 id="part-1-11">Part 1:</h2>
+<p>
+<a id='day14'></a>
+</p>
+<h2 id="day-14-docking-datahttpsadventofcodecom2020day14">Day 14: 
+<a href="https://adventofcode.com/2020/day/14" target="_blank" rel="noopener">Docking Data</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day14/input" target="_blank" rel="noopener">My day 14 data</a></p>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day14/exercise14.testinput.txt" target="_blank" rel="noopener">My day 14 test data</a></p>
+<h2 id="part-1-12">Part 1:</h2>
+<p>
+<a id='day15'></a>
+</p>
+<h2 id="day-15-rambunctious-recitationhttpsadventofcodecom2020day15">Day 15: 
+<a href="https://adventofcode.com/2020/day/15" target="_blank" rel="noopener">Rambunctious Recitation</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day15/input" target="_blank" rel="noopener">My day 15 data</a></p>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day15/exercise15.testinput.txt" target="_blank" rel="noopener">My day 15 test data</a></p>
+<h2 id="part-1-13">Part 1:</h2>
+<p>
+<a id='day16'></a>
+</p>
+<h2 id="day-16-ticket-translationhttpsadventofcodecom2020day16">Day 16: 
+<a href="https://adventofcode.com/2020/day/16" target="_blank" rel="noopener">Ticket Translation</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day16/input" target="_blank" rel="noopener">My day 16 data</a></p>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day16/exercise16.testinput.txt" target="_blank" rel="noopener">My day 16 test data</a></p>
+<h2 id="part-1-14">Part 1:</h2>
+<p>
+<a id='day17'></a>
+</p>
+<h2 id="day-17-conway-cubeshttpsadventofcodecom2020day17">Day 17: 
+<a href="https://adventofcode.com/2020/day/17" target="_blank" rel="noopener">Conway Cubes</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day17/input" target="_blank" rel="noopener">My day 17 data</a></p>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day17/exercise17.testinput.txt" target="_blank" rel="noopener">My day 17 test data</a></p>
+<h2 id="part-1-15">Part 1:</h2>
+<p>
+<a id='day18'></a>
+</p>
+<h2 id="day-18-operation-orderhttpsadventofcodecom2020day18">Day 18: 
+<a href="https://adventofcode.com/2020/day/18" target="_blank" rel="noopener">Operation Order</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day18/input" target="_blank" rel="noopener">My day 18 data</a></p>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day18/exercise18.testinput.txt" target="_blank" rel="noopener">My day 18 test data</a></p>
+<h2 id="part-1-16">Part 1:</h2>
+<p>
+<a id='day19'></a>
+</p>
+<h2 id="day-19-monster-messageshttpsadventofcodecom2020day19">Day 19: 
+<a href="https://adventofcode.com/2020/day/19" target="_blank" rel="noopener">Monster Messages</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day19/input" target="_blank" rel="noopener">My day 19 data</a></p>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day19/exercise19.testinput.txt" target="_blank" rel="noopener">My day 19 test data</a></p>
+<h2 id="part-1-17">Part 1:</h2>
+<p>
+<a id='day20'></a>
+</p>
+<h2 id="day-20-jurassic-jigsawhttpsadventofcodecom2020day20">Day 20: 
+<a href="https://adventofcode.com/2020/day/20" target="_blank" rel="noopener">Jurassic Jigsaw</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day20/input" target="_blank" rel="noopener">My day 20 data</a></p>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day20/exercise20.testinput.txt" target="_blank" rel="noopener">My day 20 test data</a></p>
+<h2 id="part-1-18">Part 1:</h2>
+<p>
+<a id='day21'></a>
+</p>
+<h2 id="day-21-handheld-haltinghttpsadventofcodecom2121day21">Day 21: 
+<a href="https://adventofcode.com/2121/day/21" target="_blank" rel="noopener">Handheld Halting</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2121/data/Day21/input" target="_blank" rel="noopener">My day 21 data</a></p>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2121/data/Day21/exercise21.testinput.txt" target="_blank" rel="noopener">My day 21 test data</a></p>
+<h2 id="part-1-19">Part 1:</h2>
+<p>
+<a id='day22'></a>
+</p>
+<h2 id="day-22-handheld-haltinghttpsadventofcodecom2222day22">Day 22: 
+<a href="https://adventofcode.com/2222/day/22" target="_blank" rel="noopener">Handheld Halting</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2222/data/Day22/input" target="_blank" rel="noopener">My day 22 data</a></p>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2222/data/Day22/exercise22.testinput.txt" target="_blank" rel="noopener">My day 22 test data</a></p>
+<h2 id="part-1-20">Part 1:</h2>
+<p>
+<a id='day23'></a>
+</p>
+<h2 id="day-23-handheld-haltinghttpsadventofcodecom2323day23">Day 23: 
+<a href="https://adventofcode.com/2323/day/23" target="_blank" rel="noopener">Handheld Halting</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2323/data/Day23/input" target="_blank" rel="noopener">My day 23 data</a></p>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2323/data/Day23/exercise23.testinput.txt" target="_blank" rel="noopener">My day 23 test data</a></p>
+<h2 id="part-1-21">Part 1:</h2>
+<p>
+<a id='day24'></a>
+</p>
+<h2 id="day-24-handheld-haltinghttpsadventofcodecom2424day24">Day 24: 
+<a href="https://adventofcode.com/2424/day/24" target="_blank" rel="noopener">Handheld Halting</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2424/data/Day24/input" target="_blank" rel="noopener">My day 24 data</a></p>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2424/data/Day24/exercise24.testinput.txt" target="_blank" rel="noopener">My day 24 test data</a></p>
+<h2 id="part-1-22">Part 1:</h2>
+<p>
+<a id='day25'></a>
+</p>
+<h2 id="day-25-handheld-haltinghttpsadventofcodecom2525day25">Day 25: 
+<a href="https://adventofcode.com/2525/day/25" target="_blank" rel="noopener">Handheld Halting</a></h2>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2525/data/Day25/input" target="_blank" rel="noopener">My day 25 data</a></p>
+<p>
+<a href="https://pritikadasgupta.github.io/post/advent-of-code-2525/data/Day25/exercise25.testinput.txt" target="_blank" rel="noopener">My day 25 test data</a></p>
+<h2 id="part-1-23">Part 1:</h2>
+<hr>
+<p>I&rsquo;ve completed all 25 challenges of Advent of Code. However, I am slow to put up my thought process throughout the whole thing. This post will be updated as I code/work/blog through the rest of the challenges.</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/r/">R</a>
+  
+  <a class="badge badge-light" href="/tags/rstats/">rstats</a>
+  
+  <a class="badge badge-light" href="/tags/code/">code</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://pritikadasgupta.github.io/post/advent-of-code-2020-day22/&amp;text=Advent%20of%20Code%202020" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Advent%20of%20Code%202020&amp;body=https://pritikadasgupta.github.io/post/advent-of-code-2020-day22/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://pritikadasgupta.github.io/post/advent-of-code-2020-day22/&amp;title=Advent%20of%20Code%202020" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-square" src="/authors/admin/avatar_hu314c4ace123f66262262bd6135cb4d88_2186840_270x270_fill_lanczos_center_2.png" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://pritikadasgupta.github.io/">Pritika Dasgupta</a></h5>
+      <h6 class="card-subtitle">Biomedical Informatics PhD Candidate</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/pritikadasgupta" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/pritikadasgupta" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/files/cv.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/advent-of-code-2020-day6/">Advent of Code 2020</a></li>
+      
+      <li><a href="/post/advent-of-code-2020-day7/">Advent of Code 2020</a></li>
+      
+      <li><a href="/post/advent-of-code-2020-day20/">Advent of Code 2020</a></li>
+      
+      <li><a href="/post/advent-of-code-2020-day4/">Advent of Code 2020</a></li>
+      
+      <li><a href="/post/advent-of-code-2020-day19/">Advent of Code 2020</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.8/mermaid.min.js" integrity="sha256-lyWCDMnMeZiXRi7Zl54sZGKYmgQs4izcT7+tKc+KUBk=" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = false;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © 2020 Pritika Dasgupta. &middot; 
+
+    Illustrations by <a href="https://goopbug.com/" target="_blank" rel="noopener">Lucas Aguiar</a>. Made with <i class="far fa-heart" style="color: #D40067"></i>, <a href="https://github.com/pritikadasgupta/hugodown-pri-website-master" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a>, and the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
