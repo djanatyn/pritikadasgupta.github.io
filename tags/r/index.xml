@@ -14,9 +14,9 @@
     
     <item>
       <title>Advent of Code 2020</title>
-      <link>https://pritikadasgupta.github.io/post/advent-of-code-2020/</link>
+      <link>https://pritikadasgupta.github.io/post/advent-of-code-2020-day2/</link>
       <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://pritikadasgupta.github.io/post/advent-of-code-2020/</guid>
+      <guid>https://pritikadasgupta.github.io/post/advent-of-code-2020-day2/</guid>
       <description>&lt;p&gt;
 &lt;a href=&#34;https://adventofcode.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Advent of Code&lt;/a&gt; is an advent-style coding challenge, where there is a two-part coding/data challenge posted for each day in December until Christmas Day (December 1st to December 25th).&lt;/p&gt;
 &lt;p&gt;I will be attempting each day using R (mostly), Python (sometimes), and MATLAB (rarely) &amp;ndash; which are my three mainstay languages for data science.&lt;/p&gt;
@@ -140,7 +140,7 @@
 &lt;a href=&#34;https://adventofcode.com/2020/day/1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Report Repair&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day1/exercise1.input.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 1 data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1-two-numbers&#34;&gt;Part 1: Two numbers&lt;/h4&gt;
+&lt;h2 id=&#34;part-1-two-numbers&#34;&gt;Part 1: Two numbers&lt;/h2&gt;
 &lt;p&gt;The challenge was to find two numbers from a list that sum to 2020, then to report their product.&lt;/p&gt;
 &lt;p&gt;At first, I wanted to solve this problem any which way, and I didn&amp;rsquo;t really care for time complexity. So my first solution was (incomplete code snippet):&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;aParticularSum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ar&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;k&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
@@ -172,7 +172,7 @@
     &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;multiple&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This one (above) was of O(nlogn) time complexity with a space complexity of O(1).&lt;/p&gt;
 &lt;p&gt;So how do I come up with a solution that&amp;rsquo;s both efficient in terms of time and space complexity? Two words&amp;hellip;&lt;/p&gt;
-&lt;h2 id=&#34;list-comprehensions&#34;&gt;List Comprehensions&lt;/h2&gt;
+&lt;h3 id=&#34;list-comprehensions&#34;&gt;List Comprehensions&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;aParticularSum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ar&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;k&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
     &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;({&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;k&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ar&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;k&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ar&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;})&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Thus, my complete code (and by complete, I mean &amp;ldquo;composable,&amp;rdquo; like my partner says&amp;hellip;. so it can be executed by anyone via the Terminal given you&amp;rsquo;ve set the input and output paths):&lt;/p&gt;
@@ -196,7 +196,7 @@
 &lt;span class=&#34;k&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;result&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;span class=&#34;n&#34;&gt;fptr&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;write&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;result&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\n&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;span class=&#34;n&#34;&gt;fptr&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;close&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;part-2-three-numbers&#34;&gt;Part 2: Three numbers&lt;/h4&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;part-2-three-numbers&#34;&gt;Part 2: Three numbers&lt;/h2&gt;
 &lt;p&gt;The challenge was to find THREE numbers from a list that sum to 2020, then to report their product. We can take our previous solution and tweak it a little to add another variable.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;ch&#34;&gt;#!/bin/python3&lt;/span&gt;
 
@@ -224,7 +224,7 @@
 &lt;a href=&#34;https://adventofcode.com/2020/day/2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Password Philosophy&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day2/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 2 data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1&#34;&gt;Part 1:&lt;/h4&gt;
+&lt;h2 id=&#34;part-1&#34;&gt;Part 1:&lt;/h2&gt;
 &lt;p&gt;
 &lt;a id=&#39;day3&#39;&gt;&lt;/a&gt;
 &lt;/p&gt;
@@ -232,7 +232,7 @@
 &lt;a href=&#34;https://adventofcode.com/2020/day/3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Toboggan Trajectory&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day3/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 3 data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1-1&#34;&gt;Part 1:&lt;/h4&gt;
+&lt;h2 id=&#34;part-1-1&#34;&gt;Part 1:&lt;/h2&gt;
 &lt;p&gt;
 &lt;a id=&#39;day4&#39;&gt;&lt;/a&gt;
 &lt;/p&gt;
@@ -242,7 +242,7 @@
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day4/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 4 data&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day4/exercise4.testinput.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 4 test data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1-2&#34;&gt;Part 1:&lt;/h4&gt;
+&lt;h2 id=&#34;part-1-2&#34;&gt;Part 1:&lt;/h2&gt;
 &lt;p&gt;
 &lt;a id=&#39;day5&#39;&gt;&lt;/a&gt;
 &lt;/p&gt;
@@ -250,7 +250,7 @@
 &lt;a href=&#34;https://adventofcode.com/2020/day/5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Binary Boarding&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day5/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 5 data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1-3&#34;&gt;Part 1:&lt;/h4&gt;
+&lt;h2 id=&#34;part-1-3&#34;&gt;Part 1:&lt;/h2&gt;
 &lt;p&gt;
 &lt;a id=&#39;day6&#39;&gt;&lt;/a&gt;
 &lt;/p&gt;
@@ -260,7 +260,7 @@
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day6/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 6 data&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day6/exercise6.testinput.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 6 test data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1-4&#34;&gt;Part 1:&lt;/h4&gt;
+&lt;h2 id=&#34;part-1-4&#34;&gt;Part 1:&lt;/h2&gt;
 &lt;p&gt;
 &lt;a id=&#39;day7&#39;&gt;&lt;/a&gt;
 &lt;/p&gt;
@@ -268,7 +268,7 @@
 &lt;a href=&#34;https://adventofcode.com/2020/day/7&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Handy Haversacks&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day7/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 7 data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1-5&#34;&gt;Part 1:&lt;/h4&gt;
+&lt;h2 id=&#34;part-1-5&#34;&gt;Part 1:&lt;/h2&gt;
 &lt;p&gt;
 &lt;a id=&#39;day8&#39;&gt;&lt;/a&gt;
 &lt;/p&gt;
@@ -278,7 +278,7 @@
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day8/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 8 data&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day8/exercise8.testinput.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 8 test data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1-6&#34;&gt;Part 1:&lt;/h4&gt;
+&lt;h2 id=&#34;part-1-6&#34;&gt;Part 1:&lt;/h2&gt;
 &lt;p&gt;
 &lt;a id=&#39;day9&#39;&gt;&lt;/a&gt;
 &lt;/p&gt;
@@ -288,7 +288,7 @@
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day9/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 9 data&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day9/exercise9.testinput.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 9 test data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1-7&#34;&gt;Part 1:&lt;/h4&gt;
+&lt;h2 id=&#34;part-1-7&#34;&gt;Part 1:&lt;/h2&gt;
 &lt;p&gt;
 &lt;a id=&#39;day10&#39;&gt;&lt;/a&gt;
 &lt;/p&gt;
@@ -298,7 +298,7 @@
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day10/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 10 data&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day10/exercise10.testinput.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 10 test data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1-8&#34;&gt;Part 1:&lt;/h4&gt;
+&lt;h2 id=&#34;part-1-8&#34;&gt;Part 1:&lt;/h2&gt;
 &lt;p&gt;
 &lt;a id=&#39;day11&#39;&gt;&lt;/a&gt;
 &lt;/p&gt;
@@ -308,7 +308,7 @@
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day11/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 11 data&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day11/exercise11.testinput.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 11 test data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1-9&#34;&gt;Part 1:&lt;/h4&gt;
+&lt;h2 id=&#34;part-1-9&#34;&gt;Part 1:&lt;/h2&gt;
 &lt;p&gt;
 &lt;a id=&#39;day12&#39;&gt;&lt;/a&gt;
 &lt;/p&gt;
@@ -318,7 +318,7 @@
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day12/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 12 data&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day12/exercise12.testinput.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 12 test data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1-10&#34;&gt;Part 1:&lt;/h4&gt;
+&lt;h2 id=&#34;part-1-10&#34;&gt;Part 1:&lt;/h2&gt;
 &lt;p&gt;
 &lt;a id=&#39;day13&#39;&gt;&lt;/a&gt;
 &lt;/p&gt;
@@ -328,7 +328,7 @@
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day13/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 13 data&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day13/exercise13.testinput.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 13 test data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1-11&#34;&gt;Part 1:&lt;/h4&gt;
+&lt;h2 id=&#34;part-1-11&#34;&gt;Part 1:&lt;/h2&gt;
 &lt;p&gt;
 &lt;a id=&#39;day14&#39;&gt;&lt;/a&gt;
 &lt;/p&gt;
@@ -338,7 +338,7 @@
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day14/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 14 data&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day14/exercise14.testinput.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 14 test data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1-12&#34;&gt;Part 1:&lt;/h4&gt;
+&lt;h2 id=&#34;part-1-12&#34;&gt;Part 1:&lt;/h2&gt;
 &lt;p&gt;
 &lt;a id=&#39;day15&#39;&gt;&lt;/a&gt;
 &lt;/p&gt;
@@ -348,7 +348,7 @@
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day15/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 15 data&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day15/exercise15.testinput.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 15 test data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1-13&#34;&gt;Part 1:&lt;/h4&gt;
+&lt;h2 id=&#34;part-1-13&#34;&gt;Part 1:&lt;/h2&gt;
 &lt;p&gt;
 &lt;a id=&#39;day16&#39;&gt;&lt;/a&gt;
 &lt;/p&gt;
@@ -358,7 +358,7 @@
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day16/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 16 data&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day16/exercise16.testinput.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 16 test data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1-14&#34;&gt;Part 1:&lt;/h4&gt;
+&lt;h2 id=&#34;part-1-14&#34;&gt;Part 1:&lt;/h2&gt;
 &lt;p&gt;
 &lt;a id=&#39;day17&#39;&gt;&lt;/a&gt;
 &lt;/p&gt;
@@ -368,7 +368,7 @@
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day17/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 17 data&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day17/exercise17.testinput.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 17 test data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1-15&#34;&gt;Part 1:&lt;/h4&gt;
+&lt;h2 id=&#34;part-1-15&#34;&gt;Part 1:&lt;/h2&gt;
 &lt;p&gt;
 &lt;a id=&#39;day18&#39;&gt;&lt;/a&gt;
 &lt;/p&gt;
@@ -378,7 +378,7 @@
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day18/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 18 data&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day18/exercise18.testinput.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 18 test data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1-16&#34;&gt;Part 1:&lt;/h4&gt;
+&lt;h2 id=&#34;part-1-16&#34;&gt;Part 1:&lt;/h2&gt;
 &lt;p&gt;
 &lt;a id=&#39;day19&#39;&gt;&lt;/a&gt;
 &lt;/p&gt;
@@ -388,7 +388,7 @@
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day19/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 19 data&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day19/exercise19.testinput.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 19 test data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1-17&#34;&gt;Part 1:&lt;/h4&gt;
+&lt;h2 id=&#34;part-1-17&#34;&gt;Part 1:&lt;/h2&gt;
 &lt;p&gt;
 &lt;a id=&#39;day20&#39;&gt;&lt;/a&gt;
 &lt;/p&gt;
@@ -398,7 +398,7 @@
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day20/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 20 data&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day20/exercise20.testinput.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 20 test data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1-18&#34;&gt;Part 1:&lt;/h4&gt;
+&lt;h2 id=&#34;part-1-18&#34;&gt;Part 1:&lt;/h2&gt;
 &lt;p&gt;
 &lt;a id=&#39;day21&#39;&gt;&lt;/a&gt;
 &lt;/p&gt;
@@ -408,7 +408,7 @@
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2121/data/Day21/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 21 data&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2121/data/Day21/exercise21.testinput.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 21 test data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1-19&#34;&gt;Part 1:&lt;/h4&gt;
+&lt;h2 id=&#34;part-1-19&#34;&gt;Part 1:&lt;/h2&gt;
 &lt;p&gt;
 &lt;a id=&#39;day22&#39;&gt;&lt;/a&gt;
 &lt;/p&gt;
@@ -418,7 +418,7 @@
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2222/data/Day22/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 22 data&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2222/data/Day22/exercise22.testinput.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 22 test data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1-20&#34;&gt;Part 1:&lt;/h4&gt;
+&lt;h2 id=&#34;part-1-20&#34;&gt;Part 1:&lt;/h2&gt;
 &lt;p&gt;
 &lt;a id=&#39;day23&#39;&gt;&lt;/a&gt;
 &lt;/p&gt;
@@ -428,7 +428,7 @@
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2323/data/Day23/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 23 data&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2323/data/Day23/exercise23.testinput.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 23 test data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1-21&#34;&gt;Part 1:&lt;/h4&gt;
+&lt;h2 id=&#34;part-1-21&#34;&gt;Part 1:&lt;/h2&gt;
 &lt;p&gt;
 &lt;a id=&#39;day24&#39;&gt;&lt;/a&gt;
 &lt;/p&gt;
@@ -438,7 +438,7 @@
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2424/data/Day24/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 24 data&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2424/data/Day24/exercise24.testinput.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 24 test data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1-22&#34;&gt;Part 1:&lt;/h4&gt;
+&lt;h2 id=&#34;part-1-22&#34;&gt;Part 1:&lt;/h2&gt;
 &lt;p&gt;
 &lt;a id=&#39;day25&#39;&gt;&lt;/a&gt;
 &lt;/p&gt;
@@ -448,7 +448,7 @@
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2525/data/Day25/input&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 25 data&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://pritikadasgupta.github.io/post/advent-of-code-2525/data/Day25/exercise25.testinput.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My day 25 test data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;part-1-23&#34;&gt;Part 1:&lt;/h4&gt;
+&lt;h2 id=&#34;part-1-23&#34;&gt;Part 1:&lt;/h2&gt;
 &lt;hr&gt;
 &lt;p&gt;I&amp;rsquo;ve completed all 25 challenges of Advent of Code. However, I am slow to put up my thought process throughout the whole thing. This post will be updated as I code/work/blog through the rest of the challenges.&lt;/p&gt;
 </description>
