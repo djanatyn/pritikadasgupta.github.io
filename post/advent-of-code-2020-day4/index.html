@@ -638,7 +638,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    1 min read
+    3 min read
   </span>
   
 
@@ -679,20 +679,6 @@
 
     <div class="article-style">
       <p>Today</p>
-<table>
-<thead>
-<tr>
-<th>Challenge</th>
-<th style="text-align:center">Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="#day4">Day 4: Passport Processing</td>
-<td style="text-align:center">**</td>
-</tr>
-</tbody>
-</table>
 <p>
 <a id='day4'></a>
 </p>
@@ -703,7 +689,164 @@
 <p>
 <a href="https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day4/exercise4.testinput.txt" target="_blank" rel="noopener">My day 4 test data</a></p>
 <h2 id="part-1">Part 1:</h2>
-<hr>
+<pre><code class="language-{r}" data-lang="{r}">#!/usr/bin/env Rscript
+
+#Libraries
+library(tidyverse)
+
+#Load In Data
+
+#Use this if you're running from the command line:
+# data1 &lt;- read.table(file(&quot;stdin&quot;), header = FALSE, sep = &quot; &quot;)
+
+#Use this if you're opening this repo as a R project, using relative paths:
+data1 &lt;- read_file(&quot;2020/Day4/input&quot;)
+
+#-------------------
+#Clean up dataframe
+#-------------------
+data2 &lt;- paste(data1,collapse = &quot;\n&quot;) #concatenate everything into one string
+data3 &lt;- strsplit(data2,&quot;\n\n&quot;)[[1]] #find where there are two new lines to separate btwn blanks
+data4 &lt;- gsub(&quot;\n&quot;,&quot; &quot;,data3) #get rid of the \n
+#note: prob could do it cleaner with magrittr? 
+
+#-------------------
+#PART 1
+#-------------------
+validFields = c(&quot;byr&quot;,&quot;iyr&quot;,&quot;eyr&quot;,&quot;hgt&quot;,&quot;hcl&quot;,&quot;ecl&quot;,&quot;pid&quot;) #required passport fields
+# optionalField = c(&quot;cid&quot;)
+
+validPassports = 0 #initialize num of valid passports
+x_valid = vector() #initialize a vector of valid passports
+for (x in data4) {
+  validFieldValues = 0
+  for (y in validFields){
+    if(grepl(as.character(y), as.character(x), fixed = TRUE)){
+      validFieldValues = validFieldValues+1
+    }
+  }
+  
+  if(validFieldValues==length(validFields)){
+    validPassports = validPassports+1
+    x_valid &lt;- append(x_valid,x)
+  }
+  
+}
+
+print(paste(&quot;Part 1:&quot;,validPassports))
+</code></pre><pre><code class="language-{r}" data-lang="{r}">
+#-------------------
+#Create functions for validating each passport field
+#-------------------
+
+# byr (Birth Year) - four digits; at least 1920 and at most 2002.
+checkbyr &lt;- function(x){
+  if(x &gt;=1920 &amp;&amp; x &lt;=2002){
+    return(TRUE)
+  }else{return(FALSE)}
+}
+
+# iyr (Issue Year) - four digits; at least 2010 and at most 2020.
+checkiyr &lt;- function(x){
+  if(x &gt;=2010 &amp;&amp; x &lt;=2020){
+    return(TRUE)
+  }else{return(FALSE)}
+}
+
+# eyr (Expiration Year) - four digits; at least 2020 and at most 2030.
+checkeyr &lt;- function(x){
+  if(x &gt;=2020 &amp;&amp; x &lt;=2030){
+    return(TRUE)
+  }else{return(FALSE)}
+}
+
+# hgt (Height) - a number followed by either cm or in:
+#   If cm, the number must be at least 150 and at most 193.
+# If in, the number must be at least 59 and at most 76.
+
+checkhgt &lt;- function(x){
+  if(grepl(&quot;cm&quot;, as.character(x), fixed = TRUE)){
+    xnum &lt;- as.numeric(str_remove_all(x, &quot;cm&quot;)) #get numeric measurement
+    if(xnum &gt;=150 &amp;&amp; xnum &lt;=193){
+      return(TRUE)
+    }else{return(FALSE)}
+  }else if(grepl(&quot;in&quot;, as.character(x), fixed = TRUE)){
+    xnum &lt;- as.numeric(str_remove_all(x, &quot;in&quot;)) #get numeric measurement
+    if(xnum &gt;=59 &amp;&amp; xnum &lt;=76){
+      return(TRUE)
+    }else{return(FALSE)}
+  }else{
+    return(FALSE)
+  }
+
+}
+
+# hcl (Hair Color) - a # followed by exactly six characters 0-9 or a-f.
+checkhcl &lt;- function(x){
+  if(str_detect(x, &quot;^#[a-f0-9]{6}$&quot;)){
+    return(TRUE)
+  }else{return(FALSE)}
+}
+
+# ecl (Eye Color) - exactly one of: amb blu brn gry grn hzl oth.
+checkecl &lt;- function(x){
+  validFieldValues = 0
+  for (y in c(&quot;amb&quot;,&quot;blu&quot;,&quot;brn&quot;,&quot;gry&quot;,&quot;grn&quot;,&quot;hzl&quot;,&quot;oth&quot;)) {
+    if(grepl(as.character(y), as.character(x), fixed = TRUE)){
+      validFieldValues = validFieldValues+1
+    }
+  }
+  if(validFieldValues==1){
+    return(TRUE)
+  }else{return(FALSE)}
+}
+
+
+# pid (Passport ID) - a nine-digit number, including leading zeroes.
+checkpid &lt;- function(x){
+  if(str_detect(x, &quot;^[0-9]{9}$&quot;)){
+    return(TRUE)
+  }else{return(FALSE)}
+}
+
+
+
+validPassports = 0 #initialize num of valid passports
+for (x in x_valid) {
+  x_fields &lt;- strsplit(x,split=&quot; &quot;)[[1]] #separate out all the fields
+  
+  validFields_num = 0
+  for(x_fields_ in x_fields){
+    currentField &lt;- strsplit(x_fields_,split=&quot;:&quot;)[[1]][1]
+    currentValue &lt;- strsplit(x_fields_,split=&quot;:&quot;)[[1]][2]
+    
+    if(currentField==&quot;byr&quot;){
+      
+      validFields_num = validFields_num + checkbyr(currentValue)
+    }else if(currentField==&quot;iyr&quot;){
+      validFields_num = validFields_num + checkiyr(currentValue)
+    }else if(currentField==&quot;eyr&quot;){
+      validFields_num = validFields_num + checkeyr(currentValue)
+    }else if(currentField==&quot;hgt&quot;){
+      validFields_num = validFields_num + checkhgt(currentValue)
+    }else if(currentField==&quot;hcl&quot;){
+      validFields_num = validFields_num + checkhcl(currentValue)
+    }else if(currentField==&quot;ecl&quot;){
+      validFields_num = validFields_num + checkecl(currentValue)
+    }else if(currentField==&quot;pid&quot;){
+      validFields_num = validFields_num + checkpid(currentValue)
+    }
+  }
+  if(as.numeric(validFields_num)==7){
+    validPassports = validPassports+1
+  }
+}
+
+
+print(paste(&quot;Part 2:&quot;,validPassports))
+
+
+</code></pre><hr>
 
     </div>
 
